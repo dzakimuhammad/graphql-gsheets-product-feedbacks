@@ -1,0 +1,15 @@
+# Query is the base schema type which will be extended to each services
+type Query {
+    # ping is dummy query.
+    # This dummy query need to be present in Query type to makes it 
+    # to be extenabled.
+    ping: Any
+}
+
+# Mutation is the base mutation schema which should be extended to each services.
+type Mutation {
+    # ping is dummy mutation.
+    # This dummy mutation need to be present in Mutation type to makes it 
+    # to be extenabled.
+    ping: Any
+}

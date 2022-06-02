@@ -1,0 +1,3 @@
+# scalar Any is a built-in scalar from gqlgen which parsed into interface{}
+scalar Any
+scalar Time

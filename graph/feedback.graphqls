@@ -1,0 +1,17 @@
+type feedbackResponse {
+  feedbackId: String!
+  productId: String!
+  rating: Int!
+  feedbacks: String
+  createdAt: Time!
+}
+
+input feedbackPostRequest {
+  productId: String!
+  rating: Int!
+  feedbacks: String
+}
+
+extend type Mutation {
+  feedbackPost(input: feedbackPostRequest!): feedbackResponse!
+}
